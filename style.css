@@ -22,8 +22,10 @@
   ---switch-bg: url(./assets/sun.svg);
 }
 body {
-  background: var(---bg-url) no-repeat top center/cover;
-  height: 100vh;
+  background-image: var(---bg-url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 body * {
@@ -34,7 +36,8 @@ body * {
   width: 100%;
   max-width: 588px;
   margin: 56px auto 0px;
-  padding: 0 24px;
+  /* background: var(---bg-url) no-repeat top center/cover; */
+  padding: 0 24px 50px;
 }
 /*profile*/
 #profile {
